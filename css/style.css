@@ -6,12 +6,18 @@
 
 @font-face{
     font-family: "Bebas";
-    src: url("/fonts/BebasNeue-Regular.ttf");
+    src: url("../fonts/BebasNeue-Regular.ttf");
 }
 
 @font-face{
     font-family: "HelveticaNeue";
     src: url("../fonts/HelveticaNeueCyr-Light.ttf");
+}
+
+@font-face{
+    font-family: "HelveticaNeue";
+    src: url("../fonts/ofont.ru_Helvetica\ Neue.ttf");
+    font-weight: 500;
 }
 
 ul{
@@ -102,15 +108,17 @@ a{
     height: 60px;
 
     background-color: var(--orange);
+    opacity: 0.5;
 }
 
 .slider-leftline{
     position: absolute;
-    right: -145px;
-    width: 145px;
+    right: -140px;
+    width: 140px;
     height: 60px;
 
     background-color: var(--orange);
+    opacity: 0.5;
 }
 
 /* Features */
@@ -198,8 +206,112 @@ a{
 /* Footer */
 
 .footer {
-    background: var(--orange);
+    position: relative;
+
     color: white;
     font-family: "HelveticaNeue";
+    font-weight: 500;
+    line-height: 16px;
 }
 
+.footer-rightline{
+    position: absolute;
+    left: -220px;
+    width: 220px;
+    height: 305px;
+    background-color: var(--orange);
+
+    opacity: 0.5;
+}
+
+.footer-leftline{
+    position: absolute;
+    right: -140px;
+    width: 140px;
+    height: 305px;
+    background-color: var(--orange);
+
+    opacity: 0.5;
+}
+
+.footer  .row{
+    padding: 35px 20px 35px 20px;
+    background: var(--orange);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer-title__about,
+.footer-title__widget,
+.footer-title__contact{
+    margin-bottom: 25px;
+
+    font-family: "Bebas";
+    font-size: 30px;
+}
+
+.footer-widget__review{
+    margin-bottom: 18px;
+}
+
+.footer-text__about{
+    font-size: 14px;
+}
+
+.footer-widget__user,
+.footer-widget__time{
+    color: #f3b29d;
+    font-family: "HelveticaNeue";
+    font-size: 16px;
+    line-height: 18px;
+}
+.footer-widget__text,
+.footer-contact__info{
+    font-family: "HelveticaNeue";
+    font-weight: 500;
+}
+
+.footer-widget__time{
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.footer-info__address{
+    margin-top: 18px;
+
+    margin-bottom: 19px;
+}
+
+.footer-social__item{
+    margin-right: 10px;
+}
+
+.footer-social__fb::before{
+    content: url("../img/social/fb.png");
+    height: 30px;
+    width: 30px;
+}
+
+.footer-social__tw::before{
+    content: url("../img/social/tw.png");
+    height: 30px;
+    width: 30px;
+}
+
+.footer-social__mail::before{
+    content: url("../img/social/email.png");
+    height: 30px;
+    width: 30px;
+}
+
+.footer-social__rss::before{
+    content: url("../img/social/rss.png");
+    height: 30px;
+    width: 30px;
+}
+
+.footer-social__vimeo::before{
+    content: url("../img/social/vimeo.png");
+    height: 30px;
+    width: 30px;
+}
