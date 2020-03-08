@@ -26,6 +26,7 @@ ul{
 
 h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
+    font-family: "Bebas";
 }
 
 a{
@@ -95,10 +96,25 @@ a{
     margin-bottom: 42px;
 }
 
-.test{
-    height: 550px;
-    background-color: black;
-    opacity: .8;
+.carousel-item > img{
+    height: 500px;
+}
+
+.carousel-caption{
+    left: 50px;
+    text-align: left;
+    background-color: rgba(232,102,60,0.8);
+}
+
+.carousel-caption > p{
+    font-family: "HelveticaNeue";
+    font-weight: 500;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    height: 50px;
+    width: 50px;
 }
 
 .slider-rightline{
@@ -218,7 +234,7 @@ a{
     position: absolute;
     left: -220px;
     width: 220px;
-    height: 305px;
+    min-height: 305px;
     background-color: var(--orange);
 
     opacity: 0.5;
