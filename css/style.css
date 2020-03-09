@@ -21,6 +21,8 @@
 }
 
 ul{
+    margin-bottom: 0;
+
     list-style: none;
 }
 
@@ -59,6 +61,7 @@ a{
 /* Header */
 .header{
     margin-top: 22px;
+    margin-bottom: 10px;
     font-family: "Bebas";
 }
 
@@ -98,6 +101,7 @@ a{
 
 .carousel-item > img{
     height: 500px;
+    object-fit: cover;
 }
 
 .carousel-caption{
@@ -117,7 +121,7 @@ a{
     width: 50px;
 }
 
-.slider-rightline{
+.rightline{
     position: absolute;
     left: -220px;
     width: 220px;
@@ -127,7 +131,7 @@ a{
     opacity: 0.5;
 }
 
-.slider-leftline{
+.leftline{
     position: absolute;
     right: -140px;
     width: 140px;
@@ -330,4 +334,111 @@ a{
     content: url("../img/social/vimeo.png");
     height: 30px;
     width: 30px;
+}
+
+/* Portfolio.html */
+/* Portfolio */
+.portfolio{
+    position: relative;
+}
+
+.portfolio-title{
+    padding-left: 23px;
+
+    background-color: var(--orange) ;
+    color:  white;
+    height: 60px;
+    
+    line-height: 60px;
+    font-size: 30px;
+}
+
+/*Nav portfolio*/
+
+.nav-item{
+    margin-right: 15px;
+
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.nav-item > a{
+    font-family: "Bebas";
+}
+
+.nav-item-selected{
+    padding-left: 10px;
+    width: 43px;
+    height: 30px;
+
+    background-color: var(--orange);
+}
+
+.portfolio-nav > .nav{
+    margin-bottom: 37px;
+}
+
+.portfolio-list{
+    justify-content: space-between;
+}
+
+.portfolio-item{
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-bottom: 40px;
+
+    flex-basis: 23.5%;
+}
+
+
+.card-link{
+    position: relative;
+}
+
+.cover-bg{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    vertical-align: middle;
+
+    background: black;
+    -khtml-opacity: .6;
+    -moz-opacity: .6;
+    opacity: .6;
+}
+
+i{
+    display: block;
+}
+
+i::after{
+    width: 50px;
+    height: 50px; /* если высота не будет задана явна, она будет равна 100% */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: url("../img/ovarlay.png");
+}
+
+.card-link:hover .cover-bg{
+    display: block;
+}
+
+/* Media */
+
+@media (max-width: 765px){
+    .menu-list{
+        min-height: 180px;
+        flex-direction: column;
+    }
 }
