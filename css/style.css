@@ -22,7 +22,7 @@
 
 ul{
     margin-bottom: 0;
-
+    padding: 0;
     list-style: none;
 }
 
@@ -59,6 +59,7 @@ a{
 }
 
 /* Header */
+
 .header{
     margin-top: 22px;
     margin-bottom: 10px;
@@ -82,6 +83,18 @@ a{
     
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.toggler-block{
+    position: relative;
+}
+
+.toggler-button{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .selected > a{
@@ -202,7 +215,8 @@ a{
     color: var(--orange);
 }
 
-.works-title:after{
+
+.title__after:after{
     content: "";
     display: block;
     width: 100%;
@@ -221,6 +235,49 @@ a{
 }
 .card-date{
     color: var(--orange);
+}
+
+.card-link{
+    position: relative;
+}
+
+.cover-bg{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    vertical-align: middle;
+
+    background: black;
+    -khtml-opacity: .6;
+    -moz-opacity: .6;
+    opacity: .6;
+}
+
+i{
+    display: block;
+}
+
+i::after{
+    width: 50px;
+    height: 50px; /* если высота не будет задана явна, она будет равна 100% */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: url("../img/ovarlay.png");
+}
+
+.card-link:hover .cover-bg{
+    display: block;
 }
 
 /* Footer */
@@ -344,6 +401,7 @@ a{
 
 .portfolio-title{
     padding-left: 23px;
+    margin-bottom: 35px;
 
     background-color: var(--orange) ;
     color:  white;
@@ -390,51 +448,80 @@ a{
     flex-basis: 23.5%;
 }
 
+/* contact.html */
 
-.card-link{
-    position: relative;
+.sidebar-title{
+    margin-bottom: 15px;
+
+    color: var(--orange);
+    width: 150px;
+    font-size: 17px;
 }
 
-.cover-bg{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-
-    text-align: center;
-    vertical-align: middle;
-
-    background: black;
-    -khtml-opacity: .6;
-    -moz-opacity: .6;
-    opacity: .6;
+.sidebar-section{
+    margin-bottom: 40px;
 }
 
-i{
-    display: block;
+.sidebar-section p {
+    font-size: 12px;
+    font-family: "HelveticaNeue";
+    line-height: 15px;
+    text-align: left;
 }
 
-i::after{
+.categories-item{
+    font-size: 12px;
+    font-family: "HelveticaNeue";
+    line-height: 14px;
+}
+
+.categories-item a{
+    color: #464646;
+}
+
+.sidebar-gallery-item{
+    margin-bottom: 5px;
+
     width: 50px;
-    height: 50px; /* если высота не будет задана явна, она будет равна 100% */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    content: url("../img/ovarlay.png");
+    height: 50px;
+
+    background: #f3af9d;
+    border: 2px solid #e8603c
 }
 
-.card-link:hover .cover-bg{
-    display: block;
+.contact-border{
+    margin-bottom: 10px;
+    padding: 10px 13px;
+    border: 2px solid var(--orange);
+    
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.contact-input{
+    width: 217px;
+}
+
+.contact-submit{
+    padding: 0 13px;
+    border: 0;
+
+    width: 67px;
+    height: 30px;
+    background: var(--orange);
+
+    font-size: 17px;
+    color: white;
+    font-family: "Bebas";
+}
+
+.location{
+    margin-bottom: 35px;
 }
 
 /* Media */
+
+/* Nav */
 
 @media (max-width: 765px){
     .menu-list{
