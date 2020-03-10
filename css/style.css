@@ -448,6 +448,17 @@ i::after{
     flex-basis: 23.5%;
 }
 
+@media (max-width: 576px){
+    .portfolio-item{
+        flex-basis: 45%;
+    }
+}
+@media (max-width: 300px){
+    .portfolio-item{
+        flex-basis: 100%;
+    }
+}
+
 /* contact.html */
 
 .sidebar-title{
