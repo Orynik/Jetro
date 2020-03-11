@@ -530,6 +530,35 @@ i::after{
     margin-bottom: 35px;
 }
 
+/* Portfolio-item.html */
+
+.portfolio-text{
+    margin-bottom: 15px;
+}
+
+.portfolio-image{
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 500px;
+}
+
+/* About.html */
+
+.about-text-img{
+    padding: 3px;
+    margin: 15px 15px 15px 0;
+    border: 2px solid grey;
+}
+
+.about-char{
+    float:left;
+    font-size: 2em;
+    padding: 0 5px 0 0;
+    color: var(--orange);
+    font-weight: 700;
+}
+
+
 /* Media */
 
 /* Nav */
